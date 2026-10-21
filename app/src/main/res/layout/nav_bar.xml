@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomNavBar"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:background="#0D47A1"
+    android:gravity="center"
+    android:paddingHorizontal="0dp"
+    android:paddingTop="0dp"
+    android:weightSum="3">
+
+    <!-- Home Tab -->
+    <FrameLayout
+        android:id="@+id/navHomeContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <!--
+        <ImageView
+            android:id="@+id/curveHighlight"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/curved_b"
+            android:visibility="gone"
+            android:translationY="-6dp"
+            /> -->
+
+        <View
+            android:id="@+id/circleBg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_circle_selected"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/navHome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_home"
+            android:contentDescription="Home"
+            app:tint="@android:color/white"
+            android:padding="12dp"
+            android:elevation="0dp"
+            android:translationZ="0dp"/>
+    </FrameLayout>
+
+    <!-- List Tab -->
+    <FrameLayout
+        android:id="@+id/navListContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/listBgCircle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_circle_selected"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/navList"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_list_24"
+            android:contentDescription="List"
+            app:tint="@android:color/white"
+            android:padding="12dp"
+            android:elevation="0dp"
+            android:translationZ="0dp"/>
+    </FrameLayout>
+
+    <!-- Info Tab -->
+    <FrameLayout
+        android:id="@+id/navInfoContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/infoBgCircle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_circle_selected"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/navInfo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_account_box_24"
+            android:contentDescription="Info"
+            app:tint="@android:color/white"
+            android:padding="12dp"
+            android:elevation="0dp"
+            android:translationZ="0dp"/>
+    </FrameLayout>
+</LinearLayout>

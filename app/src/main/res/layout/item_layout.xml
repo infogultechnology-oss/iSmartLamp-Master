@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/helmet_item_bg"
+    android:elevation="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:animateLayoutChanges="true">
+
+    <!-- Helmet Icon -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/helmet_icon3"
+        android:contentDescription="Helmet Icon"
+        android:scaleType="centerInside" />
+
+    <!-- Helmet Name + Optional Sub Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/helmetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helmet X"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/helmetSubInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last synced: 2025-07-11"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Danger Dot -->
+    <ImageView
+        android:id="@+id/dangerDot"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/red_dot"
+        android:visibility="gone"
+        android:contentDescription="Danger Alert" />
+</LinearLayout>

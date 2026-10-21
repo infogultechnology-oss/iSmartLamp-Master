@@ -1,0 +1,47 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.ismartlamp'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.gultech.ismartlamp"
+        minSdk 28
+        targetSdk 35
+        versionCode 6
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation ('com.github.PhilJay:MPAndroidChart:v3.1.0')
+    implementation libs.volley
+    implementation libs.totp
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    implementation "androidx.work:work-runtime:2.9.0"
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+
+
+}

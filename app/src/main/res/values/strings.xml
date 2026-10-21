@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">iSmartLamp Monitoring App</string>
+    <string name="home_screen">This is the Home Screen</string>
+    <string name="Paired_Devices">Paired Devices</string>
+    <string name="paired_devices">Paired Devices:</string>
+    <string name="Avalible_devices">Available Devices:</string>
+    <string name="available_devices">Available Devices:</string>
+    <string name="Helmets">Helmets:</string>
+    <string name="helmets">Helmets:</string>
+    <string name="Temp">temp</string>
+    <string name="export_data">Export Data</string>
+    <string name="filter_data">Filter Data</string>
+
+    <string name="privacy_policy_text">
+    Privacy Policy\n
+    Effective Date: June 27, 2025\n\n
+
+    iSmartLamp Monitoring App is developed by Gull Technology. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.\n\n
+
+    1. Information We Collect\n
+    We do not collect any personally identifiable information from users. The app collects and processes sensor data from smart lamps deployed in mines. This includes environmental sensor readings (e.g., gas levels, temperature, humidity) synced to our cloud server.\n\n
+
+    2. Permissions Used\n
+    The app requires the following permissions for core functionality:\n
+    - Bluetooth &amp; Bluetooth Admin: To scan, connect, and communicate with smart lamps.\n
+    - Bluetooth Connect &amp; Scan: For BLE-based data exchange.\n
+    - Location: Required for Bluetooth scanning to function properly on newer Android versions.\n
+    - Internet &amp; Network State: To upload synced data to our server.\n
+    - Camera: To scan QR codes for identifying smart lamps.\n
+    - Storage: For saving logs and reading configuration files when required.\n\n
+
+    3. How We Use the Information\n
+    The collected environmental data is used solely for monitoring and reporting mine safety conditions. It is transmitted securely to our server where mine operators can view and manage the information.\n\n
+
+    4. Data Security\n
+    We take appropriate measures to protect your data against unauthorized access. Data transmission to our server is secured using industry-standard encryption protocols.\n\n
+
+    5. Third-Party Access\n
+    We do not share your data with any third-party services or advertisers. All collected information remains within the infrastructure managed by Gull Technology.\n\n
+
+    6. User Control\n
+    Users may uninstall the app at any time to stop data collection. No user accounts or personal identifiers are required to use the app.\n\n
+
+    7. Data Deletion\n
+    Users can delete locally stored data directly from the mobile app. Additionally, mine owners have full control to delete synced environmental data through the web dashboard at any time. No additional request is necessary for data removal.\n\n
+
+    8. Contact Us\n
+    If you have any questions or concerns regarding this policy, you may contact us at:\n
+    Email: info@gulltechnology.com\n
+    Website: https://gulltechnology.com\n\n
+
+    By using the iSmartLamp Monitoring App, you agree to the terms outlined in this privacy policy.
+</string>
+
+
+
+</resources>

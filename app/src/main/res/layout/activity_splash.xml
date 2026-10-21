@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="#FFFF"
+        android:contentDescription="Product Logo"
+        android:src="@drawable/helmet_icon3" />
+
+
+    <!-- Main App Logo -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="197dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/logo" />
+
+
+
+
+</LinearLayout>
